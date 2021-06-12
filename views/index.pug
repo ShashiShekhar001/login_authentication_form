@@ -1,0 +1,11 @@
+doctype
+html
+  head
+    title front
+    style
+     include ../static/index.css
+  body
+    h1 Hi #{name}
+    <form action="/logout?_method=DELETE" method="POST">
+    <button type="submit">Log Out</button>
+    </form>

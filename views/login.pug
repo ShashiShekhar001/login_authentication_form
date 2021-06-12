@@ -1,0 +1,19 @@
+doctype
+html
+  head
+    title login
+    style
+      include ../static/login.css
+  body
+   div.login
+    h1 Login Form
+    form(action="/login" method="POST")
+      label(for="email") Email:
+      input(type="email" name="email" id="email")
+      br
+      label(for="password") Password:
+      input(type="password" name="password" id="password")
+      br
+      button(for="submit") login
+      br
+      a(href="/register") register
